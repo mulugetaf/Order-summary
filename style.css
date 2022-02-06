@@ -1,0 +1,117 @@
+@import url(https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap);
+
+:root {
+    --bg-color: hsl(225, 100%, 94%);
+    --button-bg-color: hsl(245, 75%, 52%);
+    --hover-color: hsla(245, 75%, 52%, 0.7);
+    --plan-bg: hsl(225, 100%, 98%);
+    --text-color: hsl(224, 23%, 55%);
+    --heading-color: hsl(223, 47%, 23%)
+}
+
+@media (min-width: 375px) {
+    body {
+        text-align: center;
+        background-image: url("images/pattern-background-desktop.svg");
+        background-size: auto;
+        background-color: var(--bg-color);
+        font-family: 'Red Hat Display', sans-serif;
+        font-weight: 500, 700, 900;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-repeat: no-repeat;
+    }
+}
+
+@media(max-width: 375px) {
+    body {
+        background-image: url("images/pattern-background-mobile.svg");
+        background-color: var(--bg-color);
+        background-repeat: no-repeat;
+    }
+}
+
+.main-container {
+    background-color: var(--plan-bg);
+    margin: auto;
+    border-radius: 20px;
+    position: relative;
+}
+
+.music-img {
+    background-image: url(images/illustration-hero.svg);
+    background-repeat: no-repeat;
+    width: 450px;
+    height: 250px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.container {
+
+    width: 450px;
+    height: 380px;
+}
+
+.music-price {
+    color: var(--text-color);
+    padding: 30px;
+    width: 300px;
+    display: inline-block;
+    border-radius: 10px;
+    position: relative;
+}
+
+.annual-plan {
+    float: right;
+    margin-block-start: 0;
+    margin-block-end: 1em;
+    margin-right: 50px;
+    position: relative;
+    display: left;
+}
+
+b {
+    position: relative;
+    right: 60px;
+}
+
+.music-icon {
+    content: url("./images/icon-music.svg");
+    float: left;
+}
+
+.price {
+    padding-right: 40px;
+    margin-block-start: 10px;
+    margin-block-end: 1em;
+    position: relative;
+    right: 30px;
+}
+
+.change {
+    position: relative;
+    float: right;
+    color: var(--button-bg-color);
+    text-decoration: underline;
+
+}
+
+.proceed {
+    position: relative;
+    width: 300px;
+    margin-top: 50px;
+}
+
+.proceed p {
+    background-color: var(--button-bg-color);
+    color: var(--bg-color);
+    border-radius: 10px;
+    text-align: center;
+    line-height: 40px;
+}
+
+.padding {
+    padding: 3px;
+}
