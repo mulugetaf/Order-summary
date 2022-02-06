@@ -35,9 +35,12 @@
 
 .main-container {
     background-color: var(--plan-bg);
-    margin: auto;
     border-radius: 20px;
     position: relative;
+    margin-top: 80px;
+    margin-bottom: 80px;
+
+
 }
 
 .music-img {
@@ -49,7 +52,6 @@
 }
 
 .container {
-
     width: 450px;
     height: 380px;
 }
